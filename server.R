@@ -27,7 +27,7 @@ shinyServer(function(input, output) {
         }else{
             x <- read.csv(text=input$text, sep="\t")
         }
-        round(cor(cbind(x)),3)
+        round(cor(cbind(x), use = "complete"),3)
     })
     
     
