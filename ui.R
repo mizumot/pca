@@ -1,6 +1,6 @@
-
-
 library(shiny)
+library(shinyAce)
+
 
 shinyUI(bootstrapPage(
 
@@ -37,14 +37,14 @@ shinyUI(bootstrapPage(
             strong("Scatter plot matrices"),
 
             br(),
-            downloadButton('downloadCorPlot', 'Download the plot as pdf'),
+
 
             plotOutput("corPlot"),
 
             br(),
 
             h3("Scree plot"),
-            downloadButton('downloadSPlot', 'Download the plot as pdf'),
+
 
             plotOutput("sPlot", width="80%"),
 
@@ -53,36 +53,35 @@ shinyUI(bootstrapPage(
 
             h3("Results of principal component analysis"),
             verbatimTextOutput("pcaresult.out"),
-            downloadButton('downloadData', 'Download the data with principal component scores'),
 
             br(),
             br(),
 
             h3("Plot"),
-            downloadButton('downloadPlot1', 'Download the plot as pdf'),
+
             plotOutput("pcPlot1", height = "600px"),
 
             br(),
 
-            downloadButton('downloadPlot2', 'Download the plot as pdf'),
+
             plotOutput("pcPlot2", height = "500px"),
 
             br(),
 
-            downloadButton('downloadPlot3', 'Download the plot as pdf'),
+
             plotOutput("pcPlot3", height = "500px"),
 
             br(),
 
             h4("Biplot"),
-            downloadButton('downloadPlot4', 'Download the plot as pdf'),
+
             plotOutput("pcPlot4", height = "700px"),
 
             br(),
 
             h4("Cluster analysis using the principal component scores"),
             p("(Ward method with the squared Euclidean distance technique)"),
-            downloadButton('downloadPlot5', 'Download the plot as pdf'),
+
             plotOutput("pcPlot5"),
 
             br(),
