@@ -125,6 +125,16 @@ shinyUI(bootstrapPage(
 
             br(),
 
+            strong('Citation in Publications'),
+            p('Mizumoto, A. (2015). Langtest (Version 1.0) [Web application]. Retrieved from http://langtest.jp'),
+
+            br(),
+
+            strong('Article'),
+            p('Mizumoto, A., & Plonsky, L. (2015).', a("R as a lingua franca: Advantages of using R for quantitative research in applied linguistics.", href='http://applij.oxfordjournals.org/content/early/2015/06/24/applin.amv025.abstract', target="_blank"), em('Applied Linguistics,'), 'Advance online publication. doi:10.1093/applin/amv025'),
+
+            br(),
+
             strong('Recommended'),
             br(),
 
@@ -138,7 +148,7 @@ shinyUI(bootstrapPage(
             'written by Dr. Jenifer Larson-Hall.'),
 
             p('Also, if you are a cool Mac user and want to use R with GUI,',
-            a("MacR", href="http://www.urano-ken.com/blog/2013/02/25/installing-and-using-macr/", target="_blank"),
+            a("MacR", href="https://sites.google.com/site/casualmacr/", target="_blank"),
             'is defenitely the way to go!'),
 
             br(),
