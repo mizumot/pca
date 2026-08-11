@@ -155,7 +155,7 @@ shinyUI(bootstrapPage(
 
             strong('Author'),
             p(a("Atsushi MIZUMOTO,", href="http://mizumot.com", target="_blank"),' Ph.D.',br(),
-            'Associate Professor of Applied Linguistics',br(),
+            'Professor of Applied Linguistics',br(),
             'Faculty of Foreign Language Studies /',br(),
             'Graduate School of Foreign Language Education and Research,',br(),
             'Kansai University, Osaka, Japan'),
